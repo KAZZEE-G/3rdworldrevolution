@@ -1,7 +1,7 @@
 # Migration status (2026-11-09)
 
-TypeScript React vinext, D1 database/ChatGPT-specific auth dependencies. Public homepage works. Must adapt and stage-test before changing deployment. Source export available locally; not yet committed.
+TypeScript React vinext, D1 database and platform-specific authentication dependencies. Public homepage works. Must adapt and stage-test before changing deployment. Source has been committed on the migration/source branch.
 
-Source of truth: original ChatGPT Sites ZIP export supplied by owner. **No full source import or new production release has been performed.**
+Source of truth: original website source archive supplied by owner. **Source is available on `migration/source`. An independent production deployment has not yet been verified.**
 
-Recommended workflow: import verified source to `migration/import-chatgpt-sites`, run checks, open a PR, deploy preview, smoke-test, then merge and release. Keep old commits and tags for rollback. Preserve all MX, SPF, DKIM and domain verification DNS records. Do not claim absolute DDoS or SQL injection immunity.
+Recommended workflow: review verified source on `migration/source`, run checks, open a PR, deploy preview, smoke-test, then merge and release. Keep old commits and tags for rollback. Preserve all MX, SPF, DKIM and domain verification DNS records. Do not claim absolute DDoS or SQL injection immunity.
